@@ -2,14 +2,14 @@
 With Git, you can easily follow your source code's revision history and track changes. You can also go back in time to learn about how the version has changed and who has made the changes. When the latest version of a file is on a shared repository, Git will prevent unintentional overwrites by anyone on your team who has an older version of the file.<br/>
 
 There are four main components of a Git project:
- * __Git Repository__ -- The repository, or repo, is the “container” that tracks the changes to your project files. It holds all the commits (a snapshot of all your files at a point in time) that have been made. You can access the commit history with the command **git log**
+ * __Git Repository__ <br/> The repository, or repo, is the “container” that tracks the changes to your project files. It holds all the commits (a snapshot of all your files at a point in time) that have been made. You can access the commit history with the command **git log**
 
- * __Working tree__ -- The working tree, or working directory, consists of files that you are currently working on. The working directory is a version of a particular commit, a particular snapshot of a project that you checked out. It is the version of your Git history that HEAD is pointing at, at any given moment.
+ * __Working tree__ <br/> The working tree, or working directory, consists of files that you are currently working on. The working directory is a version of a particular commit, a particular snapshot of a project that you checked out. It is the version of your Git history that HEAD is pointing at, at any given moment.
 "Checked out" means that you have the decompressed versions of files that were pulled out of your Git repository, available for editing.
 
- * __Index__ -- The index, or staging area, is where commits are prepared.Essentially, the contents of the index are what will go into the new commit. **git add** command will add or update files from the working tree into your index.
+ * __Index__ <br/> The index, or staging area, is where commits are prepared.Essentially, the contents of the index are what will go into the new commit. **git add** command will add or update files from the working tree into your index.
 
- * __Head__ --- HEAD is the part of git that points to your branches _(the master branch by default)_. HEAD points to the currently checked out branch, and that in turn points back to the last commit from that branch. HEAD can move not only in time (when you check out previous commits), but it also moves when you create new branches or simply switch to other branches.It's also the point in your Git history that you can place your next commit upon, the parent for your next commit.So, in effect, HEAD is a reference that frequently changes and points to two things: the branch itself, and through that, the last commit on that branch.
+ * __Head__ <br/> HEAD is the part of git that points to your branches _(the master branch by default)_. HEAD points to the currently checked out branch, and that in turn points back to the last commit from that branch. HEAD can move not only in time (when you check out previous commits), but it also moves when you create new branches or simply switch to other branches.It's also the point in your Git history that you can place your next commit upon, the parent for your next commit.So, in effect, HEAD is a reference that frequently changes and points to two things: the branch itself, and through that, the last commit on that branch.
 
 
 ### The basic Git workflow goes something like this:
